@@ -1,0 +1,283 @@
+@import url(default.css);
+@import url(font.css);
+@import url(common.css);
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+header .logo a {
+    display: block;
+    width: 153px;
+    height: 51px;
+    background: url(../images/logo.png) no-repeat center center / contain;
+}
+
+.gnb a.login {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F3F4F6;
+    border-radius: 8px;
+    background-color: #3692FF;
+    padding: 12px 40px;
+}
+
+.visual {
+    width: 100%;
+    height: 540px;
+    background-color: #CFE5FF;
+}
+
+.visual .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 540px;
+}
+
+.visual .txt_wrap {
+    padding: 40px 0;
+}
+
+.visual .txt_wrap .tit {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #374151;
+}
+
+.visual .more {
+    display: block;
+    color: #F9FAFB;
+    background-color: #3692FF;
+    border-radius: 40px;
+    text-align: center;
+    padding: 12px 124px;
+    margin: 32px 0 60px 0;
+}
+
+.visual .photo {
+    width: 746px;
+    height: 340px;
+}
+
+.visual .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hot_item {
+    margin: 138px 0;
+}
+
+.hot_item .wrapper {
+    padding: 0 23px;
+    width: 988px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    background: #FCFCFC;
+}
+
+.hot_item .photo {
+    height: 444px;
+}
+
+.hot_item .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hot_item strong {
+    display: block;
+    color: #3692FF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.hot_item h2 {
+    margin: 12px 0 24px 0;
+    color: #374151;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+.hot_item p {
+    color: #374151;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.search {
+    margin: 138px 0;
+}
+
+.search .wrapper {
+    padding: 0 14px;
+    width: 988px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 64px;
+    background: #FCFCFC;
+}
+
+.search .photo {
+    height: 444px;
+}
+
+.search .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search .txt_wrap {
+    text-align: right;
+}
+
+.search strong {
+    display: block;
+    color: #3692FF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.search h2 {
+    margin: 12px 0 24px 0;
+    color: #374151;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+.search p {
+    color: #374151;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.register {
+    margin: 138px 0 276px 0;
+}
+
+.register .wrapper {
+    padding: 0 7px;
+    width: 988px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    background: #FCFCFC;
+}
+
+.register .photo {
+    height: 444px;
+}
+
+.register .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register strong {
+    display: block;
+    color: #3692FF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.register h2 {
+    margin: 12px 0 24px 0;
+    color: #374151;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+.register p {
+    color: #374151;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.banner {
+    width: 100%;
+    height: 540px;
+    background-color: #CFE5FF;
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 540px;
+}
+
+.banner p {
+    padding: 0 0 172px 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #374151;
+}
+
+.banner .photo {
+    width: 746px;
+    height: 397px;
+    overflow: hidden;
+}
+
+.banner .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #111827;
+    padding: 32px 0 108px 0;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copy {
+    color: #9CA3AF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .f_nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+footer .f_nav ul li {
+    color: #E5E7EB;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .sns ul {
+    display: flex;
+    gap: 12px;
+}
