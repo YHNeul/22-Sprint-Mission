@@ -6,8 +6,13 @@ body {
 }
 header {
     height : 70px;
-    position : relative ;
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
     border-bottom : solid 1px #DFDFDF;
+    background-color: white;
 
    
 }
