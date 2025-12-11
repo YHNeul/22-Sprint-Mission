@@ -65,6 +65,9 @@ height: 300px;
   border: none;
 }
 
+
+
+
 .login-password {
   width: 640px;
   height : 98px;
@@ -87,6 +90,19 @@ height: 300px;
   gap :10px;
   background: #F3F4F6;
   border: none;
+}
+
+.password-input {
+  position: relative ;
+}
+.password-input img {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%); 
+  width: 24px;
+  height: 24px;
+  z-index: 10; 
 }
 
 .login-button {
