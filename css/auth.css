@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.auth-container {
+  max-width: 640px;
+  position: relative;
+}
+
+.auth-container--center-offset {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.auth-container--top-offset {
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.header__logo {
+  display: block;
+  width: 396px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.auth-form__label {
+  display: block;
+  margin-bottom: 16px;
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+}
+
+.auth-form__input {
+  width: 100%;
+  height: 56px;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #f3f4f6;
+  color: #1f2937;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.auth-form__password {
+  position: relative;
+}
+
+.auth-form__btn-visibility {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.auth-form__btn-visibility--on {
+  background: url("/img/btn_visibility_on.svg") no-repeat center center;
+}
+
+.auth-form__btn-visibility--off {
+  background: url("/img/btn_visibility_off.svg") no-repeat center center;
+}
+
+.auth-form__submit-btn {
+  height: 56px;
+  background: #3692ff;
+  border: none;
+  border-radius: 9999px;
+  color: #f3f4f6;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.auth-simple-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0;
+  padding: 16px 23px;
+  background: #e6f2ff;
+  border-radius: 8px;
+}
+
+.auth-simple-login__text {
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.auth-simple-login__list {
+  display: flex;
+  gap: 16px;
+}
+
+.auth-simple-login__link {
+  display: block;
+  width: 42px;
+  line-height: 1.5;
+}
+
+.auth-extra {
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.714;
+  text-align: center;
+}
+
+.auth-extra__link {
+  color: #3692ff;
+}

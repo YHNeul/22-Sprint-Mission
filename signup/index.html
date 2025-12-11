@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>판다마켓</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css/reset.css"
+    />
+    <link rel="stylesheet" href="/css/auth.css" />
+  </head>
+  <body>
+    <div class="auth-container auth-container--top-offset">
+      <header>
+        <h1>
+          <a href="/" class="header__logo">
+            <img src="/img/logo.svg" alt="판다마켓" />
+          </a>
+        </h1>
+      </header>
+      <section>
+        <div class="auth-form__container">
+          <form action="#" class="auth-form">
+            <div class="auth-form__field">
+              <label for="email" class="auth-form__label">이메일</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="auth-form__input"
+              />
+            </div>
+            <div class="auth-form__field">
+              <label for="nickname" class="auth-form__label">닉네임</label>
+              <input
+                type="text"
+                name="nickname"
+                id="nickname"
+                class="auth-form__input"
+              />
+            </div>
+            <div class="auth-form__field">
+              <label for="password" class="auth-form__label">비밀번호</label>
+              <div class="auth-form__password">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="auth-form__input"
+                />
+                <button
+                  type="button"
+                  class="auth-form__btn-visibility auth-form__btn-visibility--off"
+                ></button>
+              </div>
+            </div>
+            <div class="auth-form__field">
+              <label for="password-confirm" class="auth-form__label"
+                >비밀번호 확인</label
+              >
+              <div class="auth-form__password">
+                <input
+                  type="text"
+                  name="password-confirm"
+                  id="password-confirm"
+                  class="auth-form__input"
+                />
+                <button
+                  type="button"
+                  class="auth-form__btn-visibility auth-form__btn-visibility--on"
+                ></button>
+              </div>
+            </div>
+            <button type="submit" class="auth-form__submit-btn">
+              회원가입
+            </button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <div class="auth-simple-login">
+          <p class="auth-simple-login__text">간편 로그인하기</p>
+          <ul class="auth-simple-login__list">
+            <li class="auth-simple-login__item">
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                class="auth-simple-login__link"
+              >
+                <img src="/img/ic_google.png" alt="Google" />
+              </a>
+            </li>
+            <li class="auth-simple-login__item">
+              <a
+                href="https://www.kakaocorp.com/page/"
+                target="_blank"
+                class="auth-simple-login__link"
+              >
+                <img src="/img/ic_kakaotalk.png" alt="KakaoTalk" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="auth-extra">
+          이미 회원이신가요?
+          <a href="/login/" class="auth-extra__link">로그인</a>
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
