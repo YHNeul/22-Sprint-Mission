@@ -35,7 +35,7 @@ align-items: flex-start;
 padding: 0px;
 gap: 24px;
 width: 640px;
-height: 300px;
+
 
 }
 
@@ -63,7 +63,29 @@ height: 300px;
   border: none;
 }
 
-
+.login-nickname {
+  width: 640px;
+  height : 98px;
+  gap : 16px;
+}
+.login-nickname p {
+  width: 47px;
+  height: 26px;
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1F2937;
+}
+.login-nickname input {
+  width : 640px;
+  height : 56px;
+  border-radius : 12px;
+  gap :10px;
+  background: #F3F4F6;
+  border: none;
+}
 
 
 .login-password {
@@ -90,10 +112,46 @@ height: 300px;
   border: none;
 }
 
+.login-password-right {
+  width: 640px;
+  height : 98px;
+  gap : 16px;
+}
+.login-password-right p {
+  width: 100px;
+  height: 26px;
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1F2937;
+}
+.login-password-right input {
+  width : 100%;
+  height : 56px;
+  border-radius : 12px;
+  gap :10px;
+  background: #F3F4F6;
+  border: none;
+}
+
 .password-input {
   position: relative ;
 }
 .password-input img {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%); 
+  width: 24px;
+  height: 24px;
+  z-index: 10; 
+}
+.password-right-input {
+  position: relative ;
+}
+.password-right-input img {
   position: absolute;
   top: 50%;
   right: 16px;
@@ -134,7 +192,7 @@ height: 300px;
   padding: 8px 23px;
   gap: 10px;
   width: 596px;
-  height: 50px;
+ 
   background: #E6F2FF;
   border-radius: 8px;
 }
@@ -145,8 +203,8 @@ height: 300px;
   align-items: center;
   padding: 0px;
   margin-top: 5px;  /* 간편로그인 하기 줄 가운데로 배치 */
-  width: 594px;
-  height: 42px;
+  width: 100%;
+  
 }
 .login-easy-left p {
   width: 105px;
