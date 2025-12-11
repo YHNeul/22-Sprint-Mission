@@ -8,18 +8,9 @@ body {
 .auth-container {
   max-width: 640px;
   position: relative;
-}
-
-.auth-container--center-offset {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.auth-container--top-offset {
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 header {
