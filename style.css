@@ -1,0 +1,320 @@
+/* 공통 */
+html {
+  font-family: Pretendard, sans-serif;
+  word-break: keep-all;
+}
+body {
+  background-color: #fff;
+  margin: 0;
+}
+.wrap {
+  max-width: 988px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FCFCFC;
+}
+header {
+  padding: 16px;
+  font-weight: 700;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  border-bottom: 1px solid #dfdfdf;
+}
+footer {
+  padding: 64px 180px 80px;
+  background-color: #111827;
+}
+footer > .wrap {
+  background-color: #111827;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 0;
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-content a,
+.footer-content span {
+  color: #E5E7EB;
+  text-decoration: none;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.info a:first-of-type {
+  margin-right: 8%;
+}
+.icons {
+  text-align: right;
+}
+
+
+/* 메인페이지 */
+.logo-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 400px;
+}
+.logo-box img {
+  width: 153px;
+}
+.btn {
+  background-color: #3692FF;
+}
+.btn-login {
+  font-size: 16px;
+  font-weight: 600;
+  color: #F3F4F6;
+  text-decoration: none;
+  padding: 12px 23px;
+  border-radius: 8px;
+}
+.btn-login:hover {
+  background-color: #1967D6;
+}
+.container {
+  width: 100%;
+}
+.section01 {
+  margin-top: 87px;
+}
+.overlap-box {
+  position: relative;
+}
+.over-txt {
+  position: absolute;
+  top: 29%;
+  left: 20%;
+  width: 40%;
+  text-align: left;
+}
+.over-txt p {
+  font-weight: 700;
+  font-size: 2.3vw;
+}
+.over-btn {
+  position: absolute;
+  bottom: 22%;
+  left: 20%;
+  width: 18%;
+}
+.btn-more {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 0;
+  text-decoration: none;
+  color: #F9FAFB;
+  border-radius: 40px;
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+.btn-more:hover {
+  background-color: #1967D6;
+}
+.landing:not(:first-of-type):not(:last-of-type) {
+  text-align: center;
+  margin: 7% 0;
+  display: flex;
+  align-items: center;
+}
+.landing.section01,
+.landing.section05 {
+  background-color: #CFE5FF;
+  width: 100%;
+  text-align: center;
+}
+.landing.section01 img,
+.landing.section05 img {
+  max-width: 100%;
+}
+.section02 .wrap,
+.section04 .wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+}
+.landing-text-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 6%;
+}
+.landing-text-right p:first-of-type {
+  color: #3692FF;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 140%;
+}
+.landing-text-right p:last-of-type {
+  color: #374151;
+  font-weight: 700;
+  font-size: 2.3vw;
+  margin: 10px 0 30px 0;
+}
+.landing-text-right span {
+  color: #374151;
+  font-weight: 500;
+  font-size: 24px;
+}
+.section03 .wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.landing-text-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding-left: 6%;
+}
+.landing-text-left p:first-of-type {
+  color: #3692FF;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 140%;
+}
+.landing-text-left p:last-of-type {
+  color: #374151;
+  font-weight: 700;
+  font-size: 2.3vw;
+  margin: 10px 0 30px 0;
+}
+.landing-text-left span {
+  color: #374151;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+
+/* 로그인,회원가입 페이지 */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+}
+.login-container.mt-1 {
+  margin-top: 1%;
+}
+.login-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 640px;
+  height: 618px;
+}
+.login-logo {
+  width: 396px;
+}
+.login-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 40px;
+}
+.toggle-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  top: 56%;
+}
+.login-input > div {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.login-input label {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+.login-input input {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F3F4F6;
+  border-radius: 12px;
+  color: #1F2937;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  padding: 19px;
+  margin-bottom: 24px;
+}
+.login-input input:focus-visible {
+  outline: none;
+}
+.login-button {
+  width: 100%;
+}
+.btn-big-login {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #F3F4F6;
+  text-decoration: none;
+  border-radius: 40px;
+  text-align: center;
+  padding: 18px 0;
+}
+.btn-big-login:hover {
+  background-color: #1967D6;
+}
+.easy-login {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+  background-color: #E6F2FF;
+  padding: 16px 23px;
+  border-radius: 8px;
+}
+.easy-login span {
+  font-weight: 500;
+  font-size: 16px;
+}
+.easy-login div img {
+  width: 42px;
+  margin-left: 16px;
+}
+.sign-link p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1F2937;
+}
+.sign-link p > a {
+  color: #3692FF;
+}
