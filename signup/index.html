@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/auth.css" />
   </head>
   <body>
-    <div class="auth-container">
+    <div class="auth-container auth-container--top-offset">
       <header>
         <h1>
           <a href="/" class="header__logo">
@@ -33,6 +33,15 @@
               />
             </div>
             <div class="auth-form__field">
+              <label for="nickname" class="auth-form__label">닉네임</label>
+              <input
+                type="text"
+                name="nickname"
+                id="nickname"
+                class="auth-form__input"
+              />
+            </div>
+            <div class="auth-form__field">
               <label for="password" class="auth-form__label">비밀번호</label>
               <div class="auth-form__password">
                 <input
@@ -47,7 +56,26 @@
                 ></button>
               </div>
             </div>
-            <button type="submit" class="auth-form__submit-btn">로그인</button>
+            <div class="auth-form__field">
+              <label for="password-confirm" class="auth-form__label"
+                >비밀번호 확인</label
+              >
+              <div class="auth-form__password">
+                <input
+                  type="text"
+                  name="password-confirm"
+                  id="password-confirm"
+                  class="auth-form__input"
+                />
+                <button
+                  type="button"
+                  class="auth-form__btn-visibility auth-form__btn-visibility--on"
+                ></button>
+              </div>
+            </div>
+            <button type="submit" class="auth-form__submit-btn">
+              회원가입
+            </button>
           </form>
         </div>
       </section>
@@ -76,8 +104,8 @@
           </ul>
         </div>
         <p class="auth-extra">
-          판다마켓이 처음이신가요?
-          <a href="/signup/" class="auth-extra__link">회원가입</a>
+          이미 회원이신가요?
+          <a href="/login/" class="auth-extra__link">로그인</a>
         </p>
       </section>
     </div>
