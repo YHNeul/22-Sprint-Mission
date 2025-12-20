@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(14px, 1.1vw, 18px);
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Pretendard', 'ROKAFSansMedium', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh; 
+}
+
+/* logo */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 640px;
+  padding: 40px 16px 0;
+}
+
+.main-logo {
+  height: 132px;
+  width: 396px;
+  display: block;
+}
+
+main {
+  flex: 1; 
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* email and same setting */
+
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%; 
+}
+
+.email-title, .nickname-title, .pw-title, .confirm-pw-title {
+  color: #1F2937;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 16px;
+  margin: 0 0 16px 0;
+}
+
+.login-form, .signup-form, .pw-form {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.login-form input, .signup-form input, .pw-form input {
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  border-radius: 12px;
+  background-color: #F3F4F6;
+  color: #111827;
+}
+
+.nickname-title, .pw-title, .confirm-pw-title{ 
+  margin-top: 24px;
+}
+
+.pw-field input {
+  padding-right: 48px;
+}
+
+.pw-field {
+  position: relative;
+  width: 100%;
+}
+
+.pw-eye, .pw-openeye {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* login section */
+
+.submit {
+  margin: 24px 0;
+  width: 100%;
+  height: 56px;
+  border-radius: 40px;
+  background-color: #3692FF;
+  font-size: 20px;
+  font-weight: 600;
+  color: #F3F4F6;
+  cursor: pointer;
+
+  border: none;
+  outline: none; 
+  appearance: none; 
+}
+
+.easyLogin-inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E6F2FF;
+  height: 74px;
+  border-radius: 8px;
+}
+
+.easyLogin-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2937;
+  margin: 24px 0 24px 23px;
+  line-height: 26px;
+}
+
+.sns-login {
+  display: flex;
+  gap: 16px;
+  margin: 16px 23px 16px 0;
+}
+
+/* signup recommdation */
+
+.frist-signup {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1F2937;
+  line-height: 24px;
+}
+
+.sign-up-link {
+  color: #3692FF; 
+}
